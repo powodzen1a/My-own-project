@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hey Buddy, check out my ig</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('image.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #000000;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px; /* Adjust the max-width as needed */
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      width: 100px;
+      color: #fff;
+    }
+
+    #buttons-container {
+      display: flex;
+    }
+
+    #yesButton {
+      background-color: #4CAF50;
+    }
+
+    #noButton {
+      background-color: #FF5555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hey Joni, will you go out with me?</h1>
+  <img src="7V0.gif" alt="GIF Image">
+  <div id="buttons-container">
+    <button id="yesButton" onclick="redirectToLink()">Yes</button>
+    <button id="noButton" onclick="moveButton()">No</button>
+  </div>
+
+  <script>
+    var noButton = document.getElementById("noButton");
+    var attempts = 0;
+
+    function moveButton() {
+      attempts++;
+
+      if (attempts === 1) {
+        noButton.style.left = "0";
+      } else if (attempts === 2) {
+        noButton.style.top = "0";
+      } else if (attempts === 3) {
+        noButton.style.left = "100%";
+      } else if (attempts === 4) {
+        noButton.style.display = "none";
+      }
+    }
+
+    function redirectToLink() {
+      window.location.href = "https://www.instagram.com/ali_gk88/";
+    }
+  </script>
+</body>
+</html>
